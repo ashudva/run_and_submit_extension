@@ -1,0 +1,59 @@
+{
+    "name": "Run, Submit Code, and Nevigate to Next",
+    "version": "1.0",
+    "description": "Add a button to run, submit code, and navigate to next problem",
+    "manifest_version": 2,
+
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+
+    "permissions": [
+        "https://www.hackerrank.com/*"
+    ],
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.hackerrank.com/*"
+            ],
+            "js": [
+                "js/contentScript.js"
+            ]
+        }
+    ], 
+
+    "commands": {
+        "run-code": {
+            "suggested_key": {
+                "default": "Alt+R",
+                "mac": "Command+R"
+            },
+            "description": "Run Code"
+        },
+        "submit-code": {
+            "suggested_key": {
+                "default": "Alt+S",
+                "mac": "Command+S"
+            },
+            "description": "Submit Code"
+        },
+        "next-problem": {
+            "suggested_key": {
+                "default": "Alt+N",
+                "mac": "Command+N"
+            },
+            "description": "Next Problem"
+        }
+    }
+}
+
