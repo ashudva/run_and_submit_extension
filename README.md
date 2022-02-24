@@ -13,7 +13,7 @@ Goto `chrome://extensions/shortcuts` and change them as you wish.
 4. Choose the extension directory
 
 # Security
-**There are no *keyloggers* as the extension uses `chrome.command` API to enable these shortcuts.**
+**There are no *keyloggers* or any malicious code as the extension uses `chrome.command` API to enable these shortcuts.**
 
 # Future Work
 Use these shortcuts features at other websites like *leetcode, codechef, spoj etc.*
